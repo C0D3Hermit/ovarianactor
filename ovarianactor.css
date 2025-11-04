@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'ovarian';
+    src: url('https://file.garden/Zvmp0XAo2CYmToHG/OvarianRunes.woff2') format('woff2'),
+        url('https://file.garden/Zvmp0XAo2CYmToHG/OvarianRunes.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+           };
+
+    .ovarianactor .name {
+    color: var(--ovarian-color);
+    font-family: ovarian;
+    font-size: 3em;
+    };
+    
+    .ovarianactor .combat-dialogue {
+    font-family: ovarian;
+    font-size: 2em;
+    text-transform: initial;
+};
+
+.ovarianactor  .combat-dialogue::after {
+    font-size: 1em;
+};
+
+/* REDEFINING ROOT TO HAVE OVARIAN COLOR */
+    :root { 
+    --dark-color: black;
+    --bright-color: white;
+    --friend-color: #00ffff;
+    --obesk-color: #ff00ff;
+    --neutral-color: #ffff00;
+    --bastard-color: #ff0066;
+    --fundfriend-color: #00ff66;
+    --ovarian-color: #ea00ff;
+    --baseTransform: translateX(0);
+
+    --bigFont: 20px;
+    --regularFont: 16px;
+    --unitlessHeight: 1080px;
+
+    --contentDialogueOffset: -12.5vw;
+    
+    font-feature-settings: "liga" 0;
+    font-size: var(--regularFont);
+}
